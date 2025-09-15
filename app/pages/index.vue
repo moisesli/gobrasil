@@ -1,3 +1,3 @@
 <template>
-  <div>Moises index.vue</div>
+  <div>Index.vue</div>
 </template>
