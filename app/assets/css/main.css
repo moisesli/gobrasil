@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+  
+  .dark body {
+    @apply bg-slate-900 text-gray-100;
+  }
+}
+
+@layer components {
+  /* Headings em dark mode */
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    @apply text-white;
+  }
+
+  /* Cards e backgrounds em dark mode */
+  .dark .bg-white {
+    @apply !bg-slate-800;
+  }
+
+  .dark .bg-gray-50 {
+    @apply !bg-slate-900;
+  }
+
+  .dark .bg-gray-100 {
+    @apply !bg-slate-800;
+  }
+
+  /* Text colors em dark mode */
+  .dark .text-gray-900 {
+    @apply !text-white;
+  }
+
+  .dark .text-gray-800 {
+    @apply !text-gray-100;
+  }
+
+  .dark .text-gray-700 {
+    @apply !text-gray-200;
+  }
+
+  .dark .text-gray-600 {
+    @apply !text-gray-300;
+  }
+
+  .dark .text-gray-500 {
+    @apply !text-gray-400;
+  }
+
+  /* Borders em dark mode */
+  .dark .border-gray-200 {
+    @apply !border-slate-700;
+  }
+
+  .dark .border-gray-300 {
+    @apply !border-slate-600;
+  }
+
+  /* Inputs em dark mode */
+  .dark input:not([type="checkbox"]):not([type="radio"]),
+  .dark textarea,
+  .dark select {
+    @apply bg-slate-700 text-white border-slate-600;
+  }
+
+  .dark input:not([type="checkbox"]):not([type="radio"]):focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    @apply border-green-500 ring-green-500;
+  }
+}
+
+
