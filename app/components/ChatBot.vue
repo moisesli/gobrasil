@@ -156,23 +156,46 @@
 </template>
 
 <script setup>
-import { ref, watch, nextTick } from 'vue'
+import { ref, watch, nextTick, computed } from 'vue'
 import { useChatbot } from '~/composables/useChatbot'
+import { useTranslations } from '~/composables/useTranslations'
 
 const { isOpen, messages, toggleChat, sendMessage, clearMessages } = useChatbot()
+const { currentLanguage } = useTranslations()
 
 const inputMessage = ref('')
 const isTyping = ref(false)
 const messagesContainer = ref(null)
 
-const quickSuggestions = ref([
-  '📄 Preciso de visto?',
-  '💰 Custo de vida?',
-  '🏠 Como alugar?',
-  '� Trabalho no Brasil?',
-  '🏦 Como fazer CPF?',
-  '☀️ Melhor época?'
-])
+const quickSuggestions = computed(() => {
+  const suggestions = {
+    pt: [
+      '📄 Preciso de visto?',
+      '💰 Custo de vida?',
+      '🏠 Como alugar?',
+      '💼 Trabalho no Brasil?',
+      '🏦 Como fazer CPF?',
+      '☀️ Melhor época?'
+    ],
+    en: [
+      '📄 Need a visa?',
+      '💰 Cost of living?',
+      '🏠 How to rent?',
+      '💼 Work in Brazil?',
+      '🏦 How to get CPF?',
+      '☀️ Best time?'
+    ],
+    es: [
+      '📄 ¿Necesito visa?',
+      '💰 ¿Costo de vida?',
+      '🏠 ¿Cómo alquilar?',
+      '💼 ¿Trabajo en Brasil?',
+      '🏦 ¿Cómo hacer CPF?',
+      '☀️ ¿Mejor época?'
+    ]
+  }
+  return suggestions[currentLanguage.value] || suggestions.pt
+})
 
 const handleSend = () => {
   if (!inputMessage.value.trim()) return

@@ -17,261 +17,261 @@ export const chatbotResponses = {
   // PREÇOS ESPECÍFICOS - CADA ITEM COM SUA CATEGORIA
   price_uber: {
     patterns: {
-      pt: ['quanto custa uber', 'preço uber', 'valor uber', 'uber custa', 'quanto é uber', 'quanto pago uber'],
+      pt: ['quanto um custa uber', 'preço uber', 'valor uber', 'uber custa', 'quanto é uber', 'quanto pago uber'],
       en: ['how much uber', 'uber price', 'uber cost', 'how much is uber'],
-      es: ['cuánto cuesta uber', 'precio uber', 'cuánto es uber', 'cuánto vale uber']
+      es: ['cuanto cuesta un uber', 'precio uber', 'cuánto es uber', 'cuánto vale uber']
     },
     responses: {
       pt: '🚖 Quanto custa um Uber no Brasil?\n\nDepende da cidade e da distância. Em média, corridas curtas custam entre R$8 e R$20, e trajetos longos entre R$25 e R$60.',
       en: '🚖 How much does an Uber cost in Brazil?\n\nIt depends on the city and distance. On average, short rides cost between R$8 and R$20, and long trips between R$25 and R$60.',
-      es: '🚖 ¿Cuánto cuesta un Uber en Brasil?\n\nDepende de la ciudad y la distancia. En promedio, viajes cortos cuestan entre R$8 y R$20, y trayectos largos entre R$25 y R$60.'
+      es: '🚖 ¿Cuanto cuesta un Uber en Brasil?\n\nDepende de la ciudad y la distancia. En promedio, viajes cortos cuestan entre R$8 y R$20, y trayectos largos entre R$25 y R$60.'
     }
   },
 
   price_coffee: {
     patterns: {
-      pt: ['quanto custa café', 'preço café', 'café padaria', 'quanto café', 'café custa'],
+      pt: ['quanto um custa café', 'preço café', 'café padaria', 'quanto café', 'café custa'],
       en: ['how much coffee', 'coffee price', 'coffee bakery', 'coffee cost'],
-      es: ['cuánto cuesta café', 'precio café', 'café panadería', 'cuánto vale café']
+      es: ['cuanto cuesta un cafe', 'precio café', 'café panadería', 'cuánto vale café']
     },
     responses: {
       pt: '☕ Quanto custa um café em uma padaria?\n\nUm café simples custa cerca de R$3 a R$6; com pão de queijo, em torno de R$10.',
       en: '☕ How much does a coffee cost at a bakery?\n\nA simple coffee costs about R$3 to R$6; with pão de queijo (cheese bread), around R$10.',
-      es: '☕ ¿Cuánto cuesta un café en una panadería?\n\nUn café simple cuesta cerca de R$3 a R$6; con pão de queijo, alrededor de R$10.'
+      es: '☕ ¿Cuanto cuesta un cafe en una panadería?\n\nUn café simple cuesta cerca de R$3 a R$6; con pão de queijo, alrededor de R$10.'
     }
   },
 
   price_restaurant: {
     patterns: {
-      pt: ['quanto custa restaurante', 'comer restaurante', 'refeição restaurante', 'almoço restaurante', 'jantar restaurante', 'restaurante simples'],
+      pt: ['quanto um custa restaurante', 'comer restaurante', 'refeição restaurante', 'almoço restaurante', 'jantar restaurante', 'restaurante simples'],
       en: ['how much restaurant', 'eat restaurant', 'meal restaurant', 'lunch restaurant', 'simple restaurant'],
-      es: ['cuánto restaurante', 'comer restaurante', 'comida restaurante', 'almuerzo restaurante']
+      es: ['cuanto cuesta ir a un restaurante', 'comer restaurante', 'comida restaurante', 'almuerzo restaurante']
     },
     responses: {
       pt: '🍽️ Quanto custa comer em um restaurante simples?\n\nEntre R$25 e R$40 por pessoa. Em restaurantes por quilo, o preço médio é R$70 o quilo.',
       en: '🍽️ How much does it cost to eat at a simple restaurant?\n\nBetween R$25 and R$40 per person. At pay-by-weight restaurants, the average price is R$70 per kilo.',
-      es: '🍽️ ¿Cuánto cuesta comer en un restaurante simple?\n\nEntre R$25 y R$40 por persona. En restaurantes por kilo, el precio promedio es R$70 el kilo.'
+      es: '🍽️ ¿Cuanto cuesta comer en un restaurante simple?\n\nEntre R$25 y R$40 por persona. En restaurantes por kilo, el precio promedio es R$70 el kilo.'
     }
   },
 
   price_bus: {
     patterns: {
-      pt: ['quanto custa ônibus', 'passagem ônibus', 'preço ônibus', 'ônibus custa', 'quanto pago ônibus', 'bilhete ônibus'],
-      en: ['how much bus', 'bus fare', 'bus ticket', 'bus price', 'bus cost'],
-      es: ['cuánto autobús', 'pasaje autobús', 'precio autobús', 'boleto autobús']
+      pt: ['quanto custa a passagem ônibus', 'passagem ônibus', 'preço ônibus', 'ônibus custa', 'quanto pago ônibus', 'bilhete ônibus', 'transporte público', 'funciona transporte', 'funciona transporte público'],
+      en: ['how much bus', 'bus fare', 'bus ticket', 'bus price', 'bus cost', 'public transport', 'transport works'],
+      es: ['cuanto cuesta una pasaje en bus', 'pasaje autobús', 'precio autobús', 'boleto autobús', 'transporte público', 'funciona transporte']
     },
     responses: {
-      pt: '🚌 Quanto custa uma passagem de ônibus?\n\nNa maioria das cidades, custa entre R$4,50 e R$6,00 por viagem.',
-      en: '🚌 How much does a bus ticket cost?\n\nIn most cities, it costs between R$4.50 and R$6.00 per trip.',
-      es: '🚌 ¿Cuánto cuesta un pasaje de autobús?\n\nEn la mayoría de las ciudades, cuesta entre R$4,50 y R$6,00 por viaje.'
+      pt: 'Ônibus e metrôs são as opções principais; o bilhete custa cerca de R$5 por viagem.',
+      en: 'Buses and metros are the main options; the ticket costs about R$5 per trip.',
+      es: 'Autobuses y metros son las opciones principales; el billete cuesta cerca de R$5 por viaje.'
     }
   },
 
   price_sim_card: {
     patterns: {
-      pt: ['quanto chip', 'preço chip', 'chip celular', 'chip pré-pago', 'chip custa', 'quanto custa chip'],
+      pt: ['quanto custa um chip', 'preço chip', 'chip celular', 'chip pré-pago', 'chip custa', 'quanto custa chip'],
       en: ['how much sim', 'sim card price', 'phone chip', 'prepaid sim', 'sim cost'],
-      es: ['cuánto chip', 'precio chip', 'chip celular', 'chip prepago', 'cuánto cuesta chip']
+      es: ['cuanto cuesta un chip', 'precio chip', 'chip celular', 'chip prepago', 'cuánto cuesta chip']
     },
     responses: {
       pt: '📱 Quanto custa um chip de celular no Brasil?\n\nDepende da operadora. Um chip pré-pago custa cerca de R$10 a R$20, e os planos mensais começam em R$30.',
       en: '📱 How much does a cell phone chip cost in Brazil?\n\nIt depends on the carrier. A prepaid chip costs about R$10 to R$20, and monthly plans start at R$30.',
-      es: '📱 ¿Cuánto cuesta un chip de celular en Brasil?\n\nDepende de la operadora. Un chip prepago cuesta cerca de R$10 a R$20, y los planes mensuales empiezan en R$30.'
+      es: '📱 ¿Cuanto cuesta un chip de celular en Brasil?\n\nDepende de la operadora. Un chip prepago cuesta cerca de R$10 a R$20, y los planes mensuales empiezan en R$30.'
     }
   },
 
   price_internet: {
     patterns: {
-      pt: ['quanto internet', 'plano internet', 'internet residencial', 'quanto custa internet', 'preço internet'],
+      pt: ['quanto custa a internet', 'plano internet', 'internet residencial', 'quanto custa internet', 'preço internet'],
       en: ['how much internet', 'internet plan', 'home internet', 'internet cost', 'internet price'],
-      es: ['cuánto internet', 'plan internet', 'internet residencial', 'cuánto cuesta internet']
+      es: ['cuanto cuesta lainternet', 'plan internet', 'internet residencial', 'cuánto cuesta internet']
     },
     responses: {
       pt: '🌐 Quanto custa um plano de internet residencial?\n\nEntre R$80 e R$150 por mês, dependendo da velocidade.',
       en: '🌐 How much does a home internet plan cost?\n\nBetween R$80 and R$150 per month, depending on speed.',
-      es: '🌐 ¿Cuánto cuesta un plan de internet residencial?\n\nEntre R$80 y R$150 por mes, dependiendo de la velocidad.'
+      es: '🌐 ¿Cuanto cuesta un plan de internet residencial?\n\nEntre R$80 y R$150 por mes, dependiendo de la velocidad.'
     }
   },
 
   price_shopping_mall: {
     patterns: {
-      pt: ['quanto shopping', 'almoçar shopping', 'comer shopping', 'almoço shopping', 'comida shopping'],
+      pt: ['quanto custa ir ao shopping', 'almoçar shopping', 'comer shopping', 'almoço shopping', 'comida shopping'],
       en: ['how much shopping mall', 'lunch mall', 'eat mall', 'food court'],
-      es: ['cuánto shopping', 'almorzar shopping', 'comer shopping', 'comida shopping']
+      es: ['cuanto cuesta ir a un shopping', 'almorzar shopping', 'comer shopping', 'comida shopping']
     },
     responses: {
       pt: '🛍️ Quanto custa almoçar em um shopping?\n\nEm média R$35 a R$50, incluindo bebida.',
       en: '🛍️ How much does lunch cost at a mall?\n\nOn average R$35 to R$50, including drinks.',
-      es: '🛍️ ¿Cuánto cuesta almorzar en un shopping?\n\nEn promedio R$35 a R$50, incluyendo bebida.'
+      es: '🛍️ ¿Cuanto cuesta almorzar en un shopping?\n\nEn promedio R$35 a R$50, incluyendo bebida.'
     }
   },
 
   price_haircut: {
     patterns: {
-      pt: ['quanto corte', 'corte cabelo', 'cortar cabelo', 'preço cabeleireiro', 'quanto cabeleireiro', 'corte simples'],
+      pt: ['quanto custa um corte', 'corte cabelo', 'cortar cabelo', 'preço cabeleireiro', 'quanto cabeleireiro', 'corte simples'],
       en: ['how much haircut', 'haircut price', 'cut hair', 'barber price', 'hair salon'],
-      es: ['cuánto corte', 'corte pelo', 'cortar pelo', 'precio peluquería', 'cuánto peluquero']
+      es: ['cuanto cuesta un corte', 'corte pelo', 'cortar pelo', 'precio peluquería', 'cuánto peluquero']
     },
     responses: {
       pt: '✂️ Quanto custa um corte de cabelo simples?\n\nHomens: R$25 a R$50. Mulheres: R$50 a R$120, dependendo do salão.',
       en: '✂️ How much does a simple haircut cost?\n\nMen: R$25 to R$50. Women: R$50 to R$120, depending on the salon.',
-      es: '✂️ ¿Cuánto cuesta un corte de pelo simple?\n\nHombres: R$25 a R$50. Mujeres: R$50 a R$120, dependiendo del salón.'
+      es: '✂️ ¿Cuanto cuesta un corte de pelo simple?\n\nHombres: R$25 a R$50. Mujeres: R$50 a R$120, dependiendo del salón.'
     }
   },
 
   price_hotel: {
     patterns: {
-      pt: ['quanto hotel', 'diária hotel', 'hotel custa', 'preço hotel', 'quanto hospedagem'],
+      pt: ['quanto custa um quarto de hotel', 'diária hotel', 'hotel custa', 'preço hotel', 'quanto hospedagem'],
       en: ['how much hotel', 'hotel rate', 'hotel cost', 'hotel price', 'accommodation cost'],
-      es: ['cuánto hotel', 'tarifa hotel', 'precio hotel', 'cuánto hospedaje']
+      es: ['cuanto cuesta un cuarto de hotel', 'tarifa hotel', 'precio hotel', 'cuánto hospedaje']
     },
     responses: {
       pt: '🏨 Quanto custa uma diária de hotel?\n\nHotéis simples custam cerca de R$150; hotéis médios, R$250 a R$400.',
       en: '🏨 How much does a hotel night cost?\n\nSimple hotels cost about R$150; mid-range hotels, R$250 to R$400.',
-      es: '🏨 ¿Cuánto cuesta una noche de hotel?\n\nHoteles simples cuestan cerca de R$150; hoteles medios, R$250 a R$400.'
+      es: '🏨 ¿Cuanto cuesta una noche de hotel?\n\nHoteles simples cuestan cerca de R$150; hoteles medios, R$250 a R$400.'
     }
   },
 
   price_taxi: {
     patterns: {
-      pt: ['quanto táxi', 'quanto taxi', 'corrida táxi', 'preço táxi', 'táxi custa', 'bandeirada'],
+      pt: ['quanto custa um táxi', 'quanto taxi', 'corrida táxi', 'preço táxi', 'táxi custa', 'bandeirada'],
       en: ['how much taxi', 'taxi fare', 'taxi price', 'taxi cost', 'cab fare'],
-      es: ['cuánto taxi', 'carrera taxi', 'precio taxi', 'tarifa taxi']
+      es: ['cuanto cuesta un taxi', 'carrera taxi', 'precio taxi', 'tarifa taxi']
     },
     responses: {
       pt: '🚕 Quanto custa uma corrida de táxi?\n\nA bandeirada (início da corrida) varia entre R$6 e R$8, mais cerca de R$2,50 por km rodado.',
       en: '🚕 How much does a taxi ride cost?\n\nThe flag drop (start of ride) ranges from R$6 to R$8, plus about R$2.50 per km.',
-      es: '🚕 ¿Cuánto cuesta una carrera de taxi?\n\nLa bajada de bandera (inicio) varía entre R$6 y R$8, más cerca de R$2,50 por km recorrido.'
+      es: '🚕 ¿Cuanto cuesta una carrera de taxi?\n\nLa bajada de bandera (inicio) varía entre R$6 y R$8, más cerca de R$2,50 por km recorrido.'
     }
   },
 
   price_gas: {
     patterns: {
-      pt: ['quanto gasolina', 'preço gasolina', 'abastecer carro', 'combustível', 'litro gasolina'],
+      pt: ['quanto custa a gasolina', 'preço gasolina', 'abastecer carro', 'combustível', 'litro gasolina'],
       en: ['how much gas', 'gas price', 'gasoline price', 'fuel car', 'fuel price'],
-      es: ['cuánto gasolina', 'precio gasolina', 'llenar tanque', 'combustible']
+      es: ['cuanto cuesta la gasolina', 'precio gasolina', 'llenar tanque', 'combustible']
     },
     responses: {
       pt: '⛽ Quanto custa abastecer um carro no Brasil?\n\nA gasolina custa em média R$6,00 por litro, podendo variar conforme o estado.',
       en: '⛽ How much does it cost to fill up a car in Brazil?\n\nGasoline costs an average of R$6.00 per liter, varying by state.',
-      es: '⛽ ¿Cuánto cuesta llenar un auto en Brasil?\n\nLa gasolina cuesta en promedio R$6,00 por litro, pudiendo variar según el estado.'
+      es: '⛽ ¿Cuanto cuesta llenar un auto en Brasil?\n\nLa gasolina cuesta en promedio R$6,00 por litro, pudiendo variar según el estado.'
     }
   },
 
   price_fast_food: {
     patterns: {
-      pt: ['quanto fast food', 'quanto lanche', 'mcdonalds', 'burguer king', 'fast-food custa', 'combo'],
+      pt: ['quanto custa um fast food', 'quanto lanche', 'mcdonalds', 'burguer king', 'fast-food custa', 'combo'],
       en: ['how much fast food', 'fast food price', 'mcdonalds', 'burger king', 'combo meal'],
-      es: ['cuánto comida rápida', 'cuánto fast food', 'mcdonalds', 'burger king', 'combo']
+      es: ['cuanto cuesta un fast food', 'cuánto fast food', 'mcdonalds', 'burger king', 'combo']
     },
     responses: {
       pt: '🍔 Quanto custa uma refeição em fast-food?\n\nEm torno de R$30 a R$40 por combo (hambúrguer, batata e refrigerante).',
       en: '🍔 How much does a fast-food meal cost?\n\nAround R$30 to R$40 per combo (burger, fries and drink).',
-      es: '🍔 ¿Cuánto cuesta una comida en fast-food?\n\nAlrededor de R$30 a R$40 por combo (hamburguesa, papas y refresco).'
+      es: '🍔 ¿Cuanto cuesta una comida en fast-food?\n\nAlrededor de R$30 a R$40 por combo (hamburguesa, papas y refresco).'
     }
   },
 
   price_metro: {
     patterns: {
-      pt: ['quanto metrô', 'quanto metro', 'passagem metrô', 'bilhete metrô', 'metrô custa'],
+      pt: ['quanto custa o metrô', 'quanto metro', 'passagem metrô', 'bilhete metrô', 'metrô custa'],
       en: ['how much metro', 'how much subway', 'metro fare', 'subway ticket', 'metro cost'],
-      es: ['cuánto metro', 'pasaje metro', 'billete metro', 'metro cuesta']
+      es: ['cuanto cuesta un billete de metro', 'pasaje metro', 'billete metro', 'metro cuesta']
     },
     responses: {
       pt: '🚇 Quanto custa uma passagem de metrô?\n\nCerca de R$5,00, disponível em cidades como São Paulo e Rio de Janeiro.',
       en: '🚇 How much does a metro ticket cost?\n\nAbout R$5.00, available in cities like São Paulo and Rio de Janeiro.',
-      es: '🚇 ¿Cuánto cuesta un pasaje de metro?\n\nCerca de R$5,00, disponible en ciudades como São Paulo y Río de Janeiro.'
+      es: '🚇 ¿Cuanto cuesta un pasaje de metro?\n\nCerca de R$5,00, disponible en ciudades como São Paulo y Río de Janeiro.'
     }
   },
 
   price_cinema: {
     patterns: {
-      pt: ['quanto cinema', 'ingresso cinema', 'filme cinema', 'cinema custa', 'ir ao cinema'],
+      pt: ['quanto custa o cinema', 'ingresso cinema', 'filme cinema', 'cinema custa', 'ir ao cinema'],
       en: ['how much cinema', 'movie ticket', 'cinema ticket', 'go to movies', 'cinema cost'],
-      es: ['cuánto cine', 'entrada cine', 'boleto cine', 'ir al cine']
+      es: ['cuanto cuesta ir a un cine', 'entrada cine', 'boleto cine', 'ir al cine']
     },
     responses: {
       pt: '🎬 Quanto custa ir ao cinema no Brasil?\n\nEntre R$25 e R$45, dependendo do dia e do cinema.',
       en: '🎬 How much does it cost to go to the cinema in Brazil?\n\nBetween R$25 and R$45, depending on the day and cinema.',
-      es: '🎬 ¿Cuánto cuesta ir al cine en Brasil?\n\nEntre R$25 y R$45, dependiendo del día y del cine.'
+      es: '🎬 ¿Cuanto cuesta ir al cine en Brasil?\n\nEntre R$25 y R$45, dependiendo del día y del cine.'
     }
   },
 
   price_doctor: {
     patterns: {
-      pt: ['quanto médico', 'consulta médica', 'médico particular', 'preço consulta', 'doutor custa'],
+      pt: ['quanto custa um médico', 'consulta médica', 'médico particular', 'preço consulta', 'doutor custa'],
       en: ['how much doctor', 'doctor visit', 'medical appointment', 'doctor cost', 'consultation price'],
-      es: ['cuánto médico', 'consulta médica', 'médico particular', 'precio consulta']
+      es: ['cuanto cuesta un médico', 'consulta médica', 'médico particular', 'precio consulta']
     },
     responses: {
       pt: '👨‍⚕️ Quanto custa uma consulta médica particular?\n\nEntre R$150 e R$400, dependendo da especialidade e cidade.',
       en: '👨‍⚕️ How much does a private doctor visit cost?\n\nBetween R$150 and R$400, depending on specialty and city.',
-      es: '👨‍⚕️ ¿Cuánto cuesta una consulta médica particular?\n\nEntre R$150 y R$400, dependiendo de la especialidad y ciudad.'
+      es: '👨‍⚕️ ¿Cuanto cuesta una consulta médica particular?\n\nEntre R$150 y R$400, dependiendo de la especialidad y ciudad.'
     }
   },
 
   price_living_alone: {
     patterns: {
-      pt: ['quanto morar sozinho', 'custo morar sozinho', 'viver sozinho', 'morar sozinho custa', 'gasto mensal'],
+      pt: ['quanto custa morar sozinho', 'custo morar sozinho', 'viver sozinho', 'morar sozinho custa', 'gasto mensal'],
       en: ['how much living alone', 'cost living alone', 'live alone cost', 'monthly expenses'],
-      es: ['cuánto vivir solo', 'costo vivir solo', 'vivir solo cuesta', 'gastos mensuales']
+      es: ['cuanto cuesta vivir solo', 'costo vivir solo', 'vivir solo cuesta', 'gastos mensuales']
     },
     responses: {
       pt: '🏠 Quanto custa morar sozinho em uma cidade média?\n\nEm torno de R$2.500 a R$3.500 por mês, incluindo aluguel, alimentação e transporte.',
       en: '🏠 How much does it cost to live alone in a mid-sized city?\n\nAround R$2,500 to R$3,500 per month, including rent, food and transportation.',
-      es: '🏠 ¿Cuánto cuesta vivir solo en una ciudad mediana?\n\nAlrededor de R$2.500 a R$3.500 por mes, incluyendo alquiler, comida y transporte.'
+      es: '🏠 ¿Cuanto cuesta vivir solo en una ciudad mediana?\n\nAlrededor de R$2.500 a R$3.500 por mes, incluyendo alquiler, comida y transporte.'
     }
   },
 
   price_money_transfer: {
     patterns: {
-      pt: ['quanto transferir', 'enviar dinheiro', 'transferência internacional', 'remessa', 'mandar dinheiro'],
+      pt: ['quanto custa transferir', 'enviar dinheiro', 'transferência internacional', 'remessa', 'mandar dinheiro'],
       en: ['how much transfer', 'send money', 'money transfer', 'international transfer', 'remittance'],
-      es: ['cuánto transferir', 'enviar dinero', 'transferencia internacional', 'remesa']
+      es: ['cuanto cuesta transferir', 'enviar dinero', 'transferencia internacional', 'remesa']
     },
     responses: {
       pt: '💸 Quanto custa enviar dinheiro para o Brasil?\n\nServiços como Wise ou Western Union cobram taxas entre 1% e 3% do valor enviado.',
       en: '💸 How much does it cost to send money to Brazil?\n\nServices like Wise or Western Union charge fees between 1% and 3% of the amount sent.',
-      es: '💸 ¿Cuánto cuesta enviar dinero a Brasil?\n\nServicios como Wise o Western Union cobran tasas entre 1% y 3% del monto enviado.'
+      es: '💸 ¿Cuanto cuesta enviar dinero a Brasil?\n\nServicios como Wise o Western Union cobran tasas entre 1% y 3% del monto enviado.'
     }
   },
 
   price_airport_chip: {
     patterns: {
-      pt: ['chip aeroporto', 'chip turista', 'comprar chip aeroporto', 'chip no aeroporto'],
+      pt: ['quanto custa um chip no aeroporto', 'chip turista', 'comprar chip aeroporto', 'chip no aeroporto'],
       en: ['airport chip', 'tourist chip', 'buy chip airport', 'sim at airport'],
-      es: ['chip aeropuerto', 'chip turista', 'comprar chip aeropuerto']
+      es: ['cuanto cuesta un chip en el aeropuerto', 'chip turista', 'comprar chip aeropuerto']
     },
     responses: {
       pt: '📱 Quanto custa comprar um chip para turista no aeroporto?\n\nGeralmente entre R$30 e R$50, com pacote de internet incluído.',
       en: '📱 How much does it cost to buy a tourist chip at the airport?\n\nUsually between R$30 and R$50, with internet package included.',
-      es: '📱 ¿Cuánto cuesta comprar un chip para turista en el aeropuerto?\n\nGeneralmente entre R$30 y R$50, con paquete de internet incluido.'
+      es: '📱 ¿Cuanto cuesta comprar un chip para turista en el aeropuerto?\n\nGeneralmente entre R$30 y R$50, con paquete de internet incluido.'
     }
   },
 
   price_water: {
     patterns: {
-      pt: ['quanto água', 'água mineral', 'garrafa água', 'preço água', 'água custa'],
+      pt: ['quanto custa uma água', 'água mineral', 'garrafa água', 'preço água', 'água custa'],
       en: ['how much water', 'mineral water', 'water bottle', 'water price', 'water cost'],
-      es: ['cuánto agua', 'agua mineral', 'botella agua', 'precio agua']
+      es: ['cuanto cuesta una agua', 'agua mineral', 'botella agua', 'precio agua']
     },
     responses: {
       pt: '💧 Quanto custa uma garrafa de água mineral?\n\nEntre R$2 e R$5, dependendo do tamanho.',
       en: '💧 How much does a bottle of mineral water cost?\n\nBetween R$2 and R$5, depending on size.',
-      es: '💧 ¿Cuánto cuesta una botella de agua mineral?\n\nEntre R$2 y R$5, dependiendo del tamaño.'
+      es: '💧 ¿Cuanto cuesta una botella de agua mineral?\n\nEntre R$2 y R$5, dependiendo del tamaño.'
     }
   },
 
   price_pizza: {
     patterns: {
-      pt: ['quanto pizza', 'pizza custa', 'preço pizza', 'pedir pizza', 'quanto custa pizza'],
-      en: ['how much pizza', 'pizza cost', 'pizza price', 'order pizza'],
-      es: ['cuánto pizza', 'pizza cuesta', 'precio pizza', 'pedir pizza', 'cuánto cuesta pizza']
+      pt: ['quanto custa uma pizza', 'pizza custa', 'preço pizza', 'pedir pizza', 'quanto custa pizza', 'quanto custa uma pizza'],
+      en: ['how much pizza', 'pizza cost', 'pizza price', 'order pizza', 'how much does pizza cost'],
+      es: ['cuanto cuesta una pizza', 'pizza cuesta', 'precio pizza', 'pedir pizza', 'cuánto cuesta pizza']
     },
     responses: {
-      pt: '🍕 Quanto custa uma pizza no Brasil?\n\nUma pizza média custa em média R$40 a R$70, dependendo do sabor e da cidade.',
-      en: '🍕 How much does a pizza cost in Brazil?\n\nA medium pizza costs on average R$40 to R$70, depending on toppings and city.',
-      es: '🍕 ¿Cuánto cuesta una pizza en Brasil?\n\nUna pizza mediana cuesta en promedio R$40 a R$70, dependiendo del sabor y la ciudad.'
+      pt: 'Uma pizza média custa em média R$40 a R$70, dependendo do sabor e da cidade.',
+      en: 'A medium pizza costs on average R$40 to R$70, depending on toppings and city.',
+      es: 'Una pizza mediana cuesta en promedio R$40 a R$70, dependiendo del sabor y la ciudad.'
     }
   },
 
@@ -303,9 +303,9 @@ export const chatbotResponses = {
 
   costs: {
     patterns: {
-      pt: ['custo', 'preço', 'quanto custa', 'valor', 'caro', 'barato', 'quanto', 'gasto', 'orçamento'],
-      en: ['cost', 'price', 'how much', 'value', 'expensive', 'cheap', 'budget', 'spending'],
-      es: ['costo', 'precio', 'cuánto cuesta', 'valor', 'caro', 'barato', 'cuánto', 'gasto', 'presupuesto']
+      pt: ['custo geral'],
+      en: ['cost general'],
+      es: ['costo general']
     },
     responses: {
       pt: '💰 Sobre custos no Brasil:\n\n🏨 Hospedagem: R$ 80-500/dia\n🍽️ Alimentação: R$ 30-150/dia\n🚕 Transporte: R$ 20-100/dia\n🎫 Atrações: R$ 50-200\n\nO custo varia muito dependendo da cidade e estilo de viagem!',
@@ -329,27 +329,27 @@ export const chatbotResponses = {
 
   weather: {
     patterns: {
-      pt: ['clima', 'tempo', 'temperatura', 'chuva', 'quente', 'frio', 'melhor época', 'quando ir', 'época do ano', 'época para visitar'],
+      pt: ['clima', 'tempo', 'temperatura', 'chuva', 'quente', 'frio', 'melhor época', 'quando ir', 'época do ano', 'época para visitar', 'melhor época para visitar'],
       en: ['weather', 'climate', 'temperature', 'rain', 'hot', 'cold', 'best time', 'when to go', 'best season'],
       es: ['clima', 'tiempo', 'temperatura', 'lluvia', 'calor', 'frío', 'mejor época', 'cuándo ir', 'época del año']
     },
     responses: {
-      pt: '☀️ Qual é a melhor época do ano para visitar o Brasil?\n\nDe dezembro a março é VERÃO e faz calor. De maio a setembro, o clima é mais ameno e chove menos.\n\n🌞 Verão (Dez-Mar): 25-40°C, mais chuvas\n🍂 Outono (Mar-Jun): 20-30°C, agradável\n❄️ Inverno (Jun-Set): 15-25°C, seco\n🌸 Primavera (Set-Dez): 22-32°C, florido',
-      en: '☀️ What\'s the best time of year to visit Brazil?\n\nDecember to March is SUMMER and it\'s hot. May to September, the weather is milder with less rain.\n\n🌞 Summer (Dec-Mar): 25-40°C, more rain\n🍂 Fall (Mar-Jun): 20-30°C, pleasant\n❄️ Winter (Jun-Sep): 15-25°C, dry\n🌸 Spring (Sep-Dec): 22-32°C, blooming',
-      es: '☀️ ¿Cuál es la mejor época del año para visitar Brasil?\n\nDe diciembre a marzo es VERANO y hace calor. De mayo a septiembre, el clima es más templado y llueve menos.\n\n🌞 Verano (Dic-Mar): 25-40°C, más lluvia\n🍂 Otoño (Mar-Jun): 20-30°C, agradable\n❄️ Invierno (Jun-Sep): 15-25°C, seco\n🌸 Primavera (Sep-Dic): 22-32°C, florido'
+      pt: 'De dezembro a março é verão e faz calor. De maio a setembro, o clima é mais ameno e chove menos.',
+      en: 'From December to March is summer and it\'s hot. From May to September, the weather is milder and rains less.',
+      es: 'De diciembre a marzo es verano y hace calor. De mayo a septiembre, el clima es más templado y llueve menos.'
     }
   },
 
   safety: {
     patterns: {
-      pt: ['segurança', 'seguranca', 'seguro', 'perigoso', 'perigo', 'risco', 'cuidado', 'país seguro', 'pais seguro'],
-      en: ['safety', 'secure', 'dangerous', 'danger', 'risk', 'safe', 'safe country'],
-      es: ['seguridad', 'seguro', 'peligroso', 'peligro', 'riesgo', 'cuidado', 'país seguro']
+      pt: ['segurança', 'seguranca', 'seguro', 'perigoso', 'perigo', 'risco', 'cuidado', 'país seguro', 'pais seguro', 'o brasil é seguro', 'brasil seguro'],
+      en: ['safety', 'secure', 'dangerous', 'danger', 'risk', 'safe', 'safe country', 'is brazil safe'],
+      es: ['seguridad', 'seguro', 'peligroso', 'peligro', 'riesgo', 'cuidado', 'país seguro', 'brasil es seguro']
     },
     responses: {
-      pt: '🛡️ O Brasil é um país seguro para viajar?\n\nDepende da região. Cidades grandes exigem mais cuidado, mas em cidades pequenas a segurança costuma ser boa.\n\n✅ Evite ostentação\n✅ Não ande com muito dinheiro\n✅ Fique em áreas turísticas à noite\n✅ Use apps de transporte confiáveis',
-      en: '🛡️ Is Brazil a safe country to travel?\n\nIt depends on the region. Big cities require more care, but in small towns safety is usually good.\n\n✅ Avoid showing off\n✅ Don\'t carry too much cash\n✅ Stay in tourist areas at night\n✅ Use reliable transport apps',
-      es: '🛡️ ¿Es Brasil un país seguro para viajar?\n\nDepende de la región. Las ciudades grandes requieren más cuidado, pero en ciudades pequeñas la seguridad suele ser buena.\n\n✅ Evita la ostentación\n✅ No lleves mucho dinero\n✅ Quédate en áreas turísticas por la noche\n✅ Usa apps de transporte confiables'
+      pt: 'Depende da região. Cidades grandes exigem mais cuidado, mas em cidades pequenas a segurança costuma ser boa.',
+      en: 'It depends on the region. Big cities require more care, but in small towns safety is usually good.',
+      es: 'Depende de la región. Las ciudades grandes requieren más cuidado, pero en ciudades pequeñas la seguridad suele ser buena.'
     }
   },
 
@@ -394,14 +394,14 @@ export const chatbotResponses = {
 
   currency: {
     patterns: {
-      pt: ['moeda', 'real', 'dinheiro', 'dólar', 'dolar', 'euro', 'câmbio', 'cambio', 'usar dólares', 'trocar'],
-      en: ['currency', 'money', 'dollar', 'euro', 'exchange', 'real', 'use dollars'],
-      es: ['moneda', 'dinero', 'dólar', 'euro', 'cambio', 'real', 'usar dólares', 'cambiar']
+      pt: ['moeda', 'real', 'dinheiro', 'dólar', 'dolar', 'euro', 'câmbio', 'cambio', 'usar dólares', 'trocar', 'que moeda', 'moeda brasil', 'moeda usada'],
+      en: ['currency', 'money', 'dollar', 'euro', 'exchange', 'real', 'use dollars', 'what currency'],
+      es: ['moneda', 'dinero', 'dólar', 'euro', 'cambio', 'real', 'usar dólares', 'cambiar', 'qué moneda']
     },
     responses: {
-      pt: '💵 Que moeda é usada no Brasil?\n\nA moeda oficial é o REAL (R$)\n\n💳 Posso usar dólares?\nO ideal é trocar por reais, pois a maioria dos estabelecimentos não aceita dólares.\n\n✅ Cartões amplamente aceitos\n🏧 Caixas eletrônicos disponíveis',
-      en: '💵 What currency is used in Brazil?\n\nThe official currency is the REAL (R$)\n\n💳 Can I use dollars?\nIt\'s best to exchange for reais, as most places don\'t accept dollars.\n\n✅ Cards widely accepted\n🏧 ATMs available everywhere',
-      es: '💵 ¿Qué moneda se usa en Brasil?\n\nLa moneda oficial es el REAL (R$)\n\n💳 ¿Puedo usar dólares?\nLo ideal es cambiar a reales, pues la mayoría de establecimientos no acepta dólares.\n\n✅ Tarjetas ampliamente aceptadas\n🏧 Cajeros automáticos disponibles'
+      pt: 'O real (R$).\n\nPosso usar dólares ou preciso trocar por reais?\nO ideal é trocar por reais, pois a maioria dos estabelecimentos não aceita dólares.',
+      en: 'The real (R$).\n\nCan I use dollars or do I need to exchange for reais?\nIt\'s best to exchange for reais, as most establishments don\'t accept dollars.',
+      es: 'El real (R$).\n\n¿Puedo usar dólares o necesito cambiar por reales?\nLo ideal es cambiar por reales, pues la mayoría de establecimientos no acepta dólares.'
     }
   },
 
@@ -420,40 +420,53 @@ export const chatbotResponses = {
 
   internet: {
     patterns: {
-      pt: ['internet', 'wi-fi', 'wifi', 'aplicativo', 'app', 'whatsapp', 'uber'],
-      en: ['internet', 'wi-fi', 'wifi', 'app', 'application', 'whatsapp', 'uber'],
-      es: ['internet', 'wi-fi', 'wifi', 'aplicación', 'app', 'whatsapp', 'uber']
+      pt: ['internet', 'wi-fi', 'wifi', 'aplicativo', 'app', 'whatsapp', 'uber', 'encontrar internet', 'fácil internet'],
+      en: ['internet', 'wi-fi', 'wifi', 'app', 'application', 'whatsapp', 'uber', 'find internet', 'easy internet'],
+      es: ['internet', 'wi-fi', 'wifi', 'aplicación', 'app', 'whatsapp', 'uber', 'encontrar internet', 'fácil internet']
     },
     responses: {
-      pt: '📱 Internet e Apps:\n\n✅ Fácil encontrar Wi-Fi em quase todos os lugares\n\n📲 Apps mais usados:\n• WhatsApp\n• Google Maps\n• iFood\n• Uber / 99',
-      en: '📱 Internet & Apps:\n\n✅ Easy to find Wi-Fi almost everywhere\n\n📲 Most used apps:\n• WhatsApp\n• Google Maps\n• iFood\n• Uber / 99',
-      es: '📱 Internet y Apps:\n\n✅ Fácil encontrar Wi-Fi en casi todos lados\n\n📲 Apps más usados:\n• WhatsApp\n• Google Maps\n• iFood\n• Uber / 99'
+      pt: 'Sim, quase todos os lugares oferecem Wi-Fi e há planos móveis acessíveis.\n\nQuais são os aplicativos mais usados no Brasil?\nWhatsApp, Google Maps, iFood, Uber e 99.',
+      en: 'Yes, almost all places offer Wi-Fi and there are affordable mobile plans.\n\nWhat are the most used apps in Brazil?\nWhatsApp, Google Maps, iFood, Uber and 99.',
+      es: 'Sí, casi todos los lugares ofrecen Wi-Fi y hay planes móviles accesibles.\n\n¿Cuáles son las aplicaciones más usadas en Brasil?\nWhatsApp, Google Maps, iFood, Uber y 99.'
+    }
+  },
+
+  brazil_climate: {
+    patterns: {
+      pt: ['como é o clima', 'clima no brasil', 'clima brasil', 'tipo de clima'],
+      en: ['how is climate', 'climate in brazil', 'brazil climate', 'type of climate'],
+      es: ['cómo es el clima', 'clima en brasil', 'clima brasil', 'tipo de clima']
+    },
+    responses: {
+      pt: 'Tropical na maior parte do país — quente e úmido no verão, mais fresco no inverno.',
+      en: 'Tropical in most of the country — hot and humid in summer, cooler in winter.',
+      es: 'Tropical en la mayor parte del país — caliente y húmedo en verano, más fresco en invierno.'
     }
   },
 
   portuguese: {
     patterns: {
-      pt: ['português', 'portugues', 'necessário saber', 'preciso falar', 'obrigatório'],
-      en: ['portuguese', 'need to speak', 'must speak', 'necessary', 'required'],
-      es: ['portugués', 'necesario saber', 'necesito hablar', 'obligatorio']
+      pt: ['português', 'portugues', 'necessário saber', 'preciso falar', 'obrigatório', 'saber português', 'falar português'],
+      en: ['portuguese', 'need to speak', 'must speak', 'necessary', 'required', 'know portuguese'],
+      es: ['portugués', 'necesario saber', 'necesito hablar', 'obligatorio', 'saber portugués', 'hablar portugués']
     },
     responses: {
-      pt: '🗣️ É necessário saber português?\n\nNão é obrigatório, mas ajuda MUITO na comunicação e para conseguir trabalho.\n\n💡 Brasileiros são receptivos e ajudam!',
-      en: '🗣️ Is it necessary to know Portuguese?\n\nNot mandatory, but it helps A LOT for communication and finding work.\n\n💡 Brazilians are welcoming and helpful!',
-      es: '🗣️ ¿Es necesario saber portugués?\n\nNo es obligatorio, pero ayuda MUCHO en la comunicación y para conseguir trabajo.\n\n💡 ¡Los brasileños son receptivos y ayudan!'
+      pt: 'Não é obrigatório, mas ajuda muito na comunicação e para conseguir trabalho.',
+      en: 'Not mandatory, but it helps a lot for communication and finding work.',
+      es: 'No es obligatorio, pero ayuda mucho en la comunicación y para conseguir trabajo.'
     }
   },
 
   living_costs: {
     patterns: {
-      pt: ['cidades baratas', 'cidade barata', 'aluguel', 'moradia', 'custo de vida'],
-      en: ['cheap cities', 'affordable cities', 'rent', 'housing', 'cost of living'],
-      es: ['ciudades baratas', 'alquiler', 'vivienda', 'costo de vida']
+      pt: ['cidades baratas', 'cidade barata', 'aluguel', 'moradia', 'custo de vida', 'quanto custa aluguel', 'apartamento simples', 'comer fora', 'supermercado', 'compras supermercado'],
+      en: ['cheap cities', 'affordable cities', 'rent', 'housing', 'cost of living', 'simple apartment', 'eat out', 'supermarket'],
+      es: ['ciudades baratas', 'alquiler', 'vivienda', 'costo de vida', 'apartamento simple', 'comer fuera', 'supermercado']
     },
     responses: {
-      pt: '💰 Custo de vida:\n\n🏙️ Cidades mais baratas:\nCuritiba, Goiânia, João Pessoa, Florianópolis\n\n🏠 Aluguel: R$800-1.500/mês\n🛒 Alimentação: R$600-1.000/mês\n🚌 Transporte: R$5 por viagem',
-      en: '💰 Cost of living:\n\n🏙️ Most affordable cities:\nCuritiba, Goiânia, João Pessoa, Florianópolis\n\n🏠 Rent: R$800-1,500/month\n🛒 Food: R$600-1,000/month\n🚌 Transport: R$5 per trip',
-      es: '💰 Costo de vida:\n\n🏙️ Ciudades más baratas:\nCuritiba, Goiânia, João Pessoa, Florianópolis\n\n🏠 Alquiler: R$800-1.500/mes\n🛒 Alimentación: R$600-1.000/mes\n🚌 Transporte: R$5 por viaje'
+      pt: 'Cidades do interior e do sul, como Curitiba, Goiânia, João Pessoa e Florianópolis.\n\nQuanto custa, em média, o aluguel de um apartamento simples?\nEntre R$800 e R$1.500, dependendo da cidade.\n\nQuanto custa comer fora ou fazer compras no supermercado?\nUma refeição simples custa de R$25 a R$40; alimentação mensal gira em torno de R$600 a R$1.000 por pessoa.',
+      en: 'Cities in the interior and south, like Curitiba, Goiânia, João Pessoa and Florianópolis.\n\nHow much does a simple apartment cost on average?\nBetween R$800 and R$1,500, depending on the city.\n\nHow much does eating out or shopping at the supermarket cost?\nA simple meal costs R$25 to R$40; monthly food expenses are around R$600 to R$1,000 per person.',
+      es: 'Ciudades del interior y del sur, como Curitiba, Goiânia, João Pessoa y Florianópolis.\n\n¿Cuánto cuesta en promedio el alquiler de un apartamento simple?\nEntre R$800 y R$1.500, dependiendo de la ciudad.\n\n¿Cuánto cuesta comer fuera o hacer compras en el supermercado?\nUna comida simple cuesta de R$25 a R$40; alimentación mensual gira en torno a R$600 a R$1.000 por persona.'
     }
   },
 
@@ -792,6 +805,370 @@ export const chatbotResponses = {
       pt: '🚗 Posso dirigir no Brasil com minha carteira estrangeira?\n\nSim, por até 180 DIAS, se a carteira estiver dentro da validade.\n\n✅ Válida por 6 meses\n✅ Deve estar em bom estado\n💡 Tradutor juramentado pode ser necessário',
       en: '🚗 Can I drive in Brazil with my foreign license?\n\nYes, for up to 180 DAYS, if the license is valid.\n\n✅ Valid for 6 months\n✅ Must be in good condition\n💡 Sworn translator may be needed',
       es: '🚗 ¿Puedo conducir en Brasil con mi licencia extranjera?\n\nSí, por hasta 180 DÍAS, si la licencia está vigente.\n\n✅ Válida por 6 meses\n✅ Debe estar en buen estado\n💡 Traductor jurado puede ser necesario'
+    }
+  },
+
+  foreign_license: {
+    patterns: {
+      pt: ['dirigir carteira estrangeira', 'carteira de motorista', 'cnh estrangeira', 'posso dirigir'],
+      en: ['drive foreign license', 'driver license', 'foreign cnh', 'can i drive'],
+      es: ['conducir licencia extranjera', 'licencia de conducir', 'cnh extranjera', 'puedo conducir']
+    },
+    responses: {
+      pt: 'Sim, por até 180 dias, se a carteira estiver dentro da validade.',
+      en: 'Yes, for up to 180 days, if the license is valid.',
+      es: 'Sí, por hasta 180 días, si la licencia está vigente.'
+    }
+  },
+
+  work_foreigners: {
+    patterns: {
+      pt: ['trabalho', 'emprego', 'trabalhar', 'oportunidades', 'empreender', 'fácil encontrar trabalho', 'trabalho para estrangeiros', 'cidades com oportunidades'],
+      en: ['work', 'job', 'employment', 'opportunities', 'entrepreneur', 'easy find work', 'work for foreigners', 'cities with opportunities'],
+      es: ['trabajo', 'empleo', 'trabajar', 'oportunidades', 'emprender', 'fácil encontrar trabajo', 'trabajo para extranjeros', 'ciudades con oportunidades']
+    },
+    responses: {
+      pt: 'Sim, mas é preciso ter CPF e visto válido. Conhecer português é um diferencial.\n\nQuais cidades oferecem mais oportunidades de emprego?\nSão Paulo, Rio de Janeiro, Curitiba, Brasília e Belo Horizonte.\n\nO Brasil é um bom país para empreender?\nSim, especialmente em áreas como turismo, alimentação e serviços locais.',
+      en: 'Yes, but you need CPF and valid visa. Knowing Portuguese is an advantage.\n\nWhich cities offer more job opportunities?\nSão Paulo, Rio de Janeiro, Curitiba, Brasília and Belo Horizonte.\n\nIs Brazil a good country to start a business?\nYes, especially in areas like tourism, food and local services.',
+      es: 'Sí, pero es necesario tener CPF y visa válida. Saber portugués es ventaja.\n\n¿Qué ciudades ofrecen más oportunidades de empleo?\nSão Paulo, Río de Janeiro, Curitiba, Brasília y Belo Horizonte.\n\n¿Brasil es un buen país para emprender?\nSí, especialmente en áreas como turismo, alimentación y servicios locales.'
+    }
+  },
+
+  legal_documents: {
+    patterns: {
+      pt: ['documentos necessários', 'morar legalmente', 'residência', 'residencia', 'viver definitivamente', 'polícia federal', 'documentos para morar', 'visto brasil', 'países sem visto', 'europeus precisam visto', 'norte-americanos visto'],
+      en: ['necessary documents', 'live legally', 'residence', 'live permanently', 'federal police', 'documents to live', 'brazil visa', 'countries without visa'],
+      es: ['documentos necesarios', 'vivir legalmente', 'residencia', 'vivir definitivamente', 'policía federal', 'documentos para vivir', 'visa brasil', 'países sin visa']
+    },
+    responses: {
+      pt: 'Passaporte, CPF e um visto válido (trabalho, estudo, residência ou permanência).\n\nCidadãos de países como Peru, Bolívia, Chile, Colômbia ou Venezuela precisam de visto?\nNão, podem entrar com o documento de identidade e permanecer até 90 dias como turistas.\n\nEuropeus e norte-americanos precisam de visto?\nAtualmente, não precisam de visto para até 90 dias, mas isso pode mudar — verifique antes da viagem.\n\nViver definitivamente no Brasil - passo a passo:\nSolicite o visto de residência, registre-se na Polícia Federal, obtenha CPF e endereço fixo.',
+      en: 'Passport, CPF and a valid visa (work, study, residence or permanent).\n\nDo citizens from countries like Peru, Bolivia, Chile, Colombia or Venezuela need a visa?\nNo, they can enter with ID and stay up to 90 days as tourists.\n\nDo Europeans and North Americans need a visa?\nCurrently, they don\'t need a visa for up to 90 days, but this may change — check before traveling.\n\nLive permanently in Brazil - step by step:\nApply for residence visa, register with Federal Police, get CPF and fixed address.',
+      es: 'Pasaporte, CPF y una visa válida (trabajo, estudio, residencia o permanencia).\n\n¿Ciudadanos de países como Perú, Bolivia, Chile, Colombia o Venezuela necesitan visa?\nNo, pueden entrar con documento de identidad y permanecer hasta 90 días como turistas.\n\n¿Europeos y norteamericanos necesitan visa?\nActualmente, no necesitan visa para hasta 90 días, pero esto puede cambiar — verifica antes del viaje.\n\nVivir definitivamente en Brasil - paso a paso:\nSolicita visa de residencia, regístrate en Policía Federal, obtén CPF y dirección fija.'
+    }
+  },
+
+  cpf_bank: {
+    patterns: {
+      pt: ['cpf', 'conta bancária', 'conta bancaria', 'banco', 'abrir conta', 'como solicitar cpf', 'como faço cpf', 'abrir conta estrangeiro'],
+      en: ['cpf', 'bank account', 'open account', 'banking', 'how to get cpf', 'open account foreigner'],
+      es: ['cpf', 'cuenta bancaria', 'abrir cuenta', 'banco', 'cómo solicitar cpf', 'cómo hago cpf', 'abrir cuenta extranjero']
+    },
+    responses: {
+      pt: 'Pode ser feito em uma agência dos Correios, Banco do Brasil ou consulado brasileiro.\n\nPosso abrir uma conta bancária sendo estrangeiro?\nSim, com passaporte, CPF e comprovante de residência.',
+      en: 'Can be done at a Post Office branch, Banco do Brasil or Brazilian consulate.\n\nCan I open a bank account as a foreigner?\nYes, with passport, CPF and proof of residence.',
+      es: 'Puede hacerse en una agencia de Correos, Banco do Brasil o consulado brasileño.\n\n¿Puedo abrir una cuenta bancaria siendo extranjero?\nSí, con pasaporte, CPF y comprobante de domicilio.'
+    }
+  },
+
+  healthcare_sus: {
+    patterns: {
+      pt: ['sus', 'saúde', 'saude', 'sistema de saúde', 'hospital', 'posto de saúde', 'atendimento gratuito', 'saúde pública', 'sus gratuito'],
+      en: ['sus', 'health', 'healthcare system', 'hospital', 'health center', 'free care', 'public health', 'sus free'],
+      es: ['sus', 'salud', 'sistema de salud', 'hospital', 'centro de salud', 'atención gratuita', 'salud pública', 'sus gratuito']
+    },
+    responses: {
+      pt: 'Sim, o SUS atende gratuitamente qualquer pessoa em território nacional.\n\nComo funcionam os hospitais e postos de saúde do SUS?\nBasta apresentar documento de identificação. O atendimento é gratuito, mas pode haver fila.',
+      en: 'Yes, SUS provides free care to anyone on national territory.\n\nHow do SUS hospitals and health centers work?\nJust present identification. Care is free, but there may be a queue.',
+      es: 'Sí, el SUS atiende gratuitamente a cualquier persona en territorio nacional.\n\n¿Cómo funcionan los hospitales y centros de salud del SUS?\nSolo presenta identificación. La atención es gratuita, pero puede haber fila.'
+    }
+  },
+
+  social_benefits: {
+    patterns: {
+      pt: ['benefício', 'beneficio', 'cesta básica', 'bolsa família', 'cras', 'programa social', 'ajuda social', 'moradia popular', 'programas sociais'],
+      en: ['benefit', 'social program', 'government aid', 'assistance', 'food basket', 'public housing', 'social programs'],
+      es: ['beneficio', 'cesta básica', 'bolsa familia', 'cras', 'programa social', 'ayuda social', 'vivienda popular', 'programas sociales']
+    },
+    responses: {
+      pt: 'Sim, em cidades pequenas é possível solicitar cesta básica, auxílio social e atendimento psicológico gratuito.\n\nComo posso solicitar moradia popular ou programas sociais?\nÉ preciso estar regularizado no país e se cadastrar no CRAS (Centro de Referência da Assistência Social).',
+      en: 'Yes, in small towns you can request food baskets, social aid and free psychological care.\n\nHow can I apply for public housing or social programs?\nYou need to be regularized in the country and register at CRAS (Social Assistance Reference Center).',
+      es: 'Sí, en ciudades pequeñas es posible solicitar cesta básica, ayuda social y atención psicológica gratuita.\n\n¿Cómo puedo solicitar vivienda popular o programas sociales?\nEs necesario estar regularizado en el país y registrarse en CRAS (Centro de Referencia de Asistencia Social).'
+    }
+  },
+
+  education: {
+    patterns: {
+      pt: ['estudar', 'estudo', 'universidade', 'diploma', 'validar diploma', 'estudar brasil', 'escola', 'universidade pública'],
+      en: ['study', 'university', 'diploma', 'validate diploma', 'education', 'study brazil', 'school', 'public university'],
+      es: ['estudiar', 'universidad', 'diploma', 'validar diploma', 'educación', 'estudiar brasil', 'escuela', 'universidad pública']
+    },
+    responses: {
+      pt: 'Sim, escolas e universidades públicas aceitam estrangeiros com documentação válida.\n\nComo validar meu diploma estrangeiro no Brasil?\nA validação é feita por universidades públicas que ofereçam o mesmo curso.',
+      en: 'Yes, schools and public universities accept foreigners with valid documentation.\n\nHow do I validate my foreign diploma in Brazil?\nValidation is done by public universities that offer the same course.',
+      es: 'Sí, escuelas y universidades públicas aceptan extranjeros con documentación válida.\n\n¿Cómo valido mi diploma extranjero en Brasil?\nLa validación es hecha por universidades públicas que ofrezcan el mismo curso.'
+    }
+  },
+
+  rent_without_docs: {
+    patterns: {
+      pt: ['alugar sem cpf', 'aluguel sem', 'fiador', 'caução', 'alugar sem documentos', 'imóvel sem cpf'],
+      en: ['rent without cpf', 'rent without documents', 'guarantor', 'deposit', 'property without cpf'],
+      es: ['alquilar sin cpf', 'alquiler sin', 'fiador', 'caución', 'alquilar sin documentos', 'inmueble sin cpf']
+    },
+    responses: {
+      pt: 'Pode usar fiador, caução ou negociar diretamente com o proprietário.',
+      en: 'You can use a guarantor, deposit or negotiate directly with the owner.',
+      es: 'Puedes usar fiador, caución o negociar directamente con el propietario.'
+    }
+  },
+
+  rights: {
+    patterns: {
+      pt: ['direitos', 'direito', 'estrangeiro', 'regularizado', 'direitos estrangeiro', 'o que posso fazer'],
+      en: ['rights', 'foreigner rights', 'regularized', 'what can i do'],
+      es: ['derechos', 'extranjero', 'regularizado', 'derechos extranjero', 'qué puedo hacer']
+    },
+    responses: {
+      pt: 'Tem direito a trabalhar, estudar e acessar saúde e justiça, desde que esteja regularizado.',
+      en: 'You have the right to work, study and access health and justice, as long as you are regularized.',
+      es: 'Tienes derecho a trabajar, estudiar y acceder a salud y justicia, siempre que estés regularizado.'
+    }
+  },
+
+  marriage: {
+    patterns: {
+      pt: ['casar', 'casamento', 'brasileiro', 'brasileira', 'cônjuge', 'casar com brasileiro', 'documentos casamento'],
+      en: ['marry', 'marriage', 'brazilian spouse', 'wedding', 'marry brazilian', 'marriage documents'],
+      es: ['casar', 'casamiento', 'brasileiro', 'brasileña', 'cónyuge', 'casar con brasileño', 'documentos casamiento']
+    },
+    responses: {
+      pt: 'Passaporte, certidão de nascimento e comprovante de estado civil, traduzidos oficialmente.',
+      en: 'Passport, birth certificate and proof of marital status, officially translated.',
+      es: 'Pasaporte, acta de nacimiento y comprobante de estado civil, traducidos oficialmente.'
+    }
+  },
+
+  tickets: {
+    patterns: {
+      pt: ['passagem', 'passagens', 'voo', 'avião', 'quanto custa viajar', 'passagem para brasil', 'quanto custa passagem'],
+      en: ['ticket', 'flight', 'airplane', 'how much to travel', 'ticket to brazil', 'how much ticket'],
+      es: ['pasaje', 'vuelo', 'avión', 'cuánto cuesta viajar', 'pasaje a brasil', 'cuánto cuesta pasaje']
+    },
+    responses: {
+      pt: 'Depende do país de origem e da época do ano. Saindo da América do Sul, as passagens custam entre US$150 e US$400. Da Europa ou América do Norte, variam de US$700 a US$1.200, em média.',
+      en: 'Depends on country of origin and time of year. From South America, tickets cost between US$150 and US$400. From Europe or North America, they range from US$700 to US$1,200 on average.',
+      es: 'Depende del país de origen y la época del año. Saliendo de América del Sur, los pasajes cuestan entre US$150 y US$400. De Europa o América del Norte, varían de US$700 a US$1.200 en promedio.'
+    }
+  },
+
+  winter: {
+    patterns: {
+      pt: ['inverno', 'frio', 'neve', 'nevar', 'tem inverno', 'tem neve', 'brasil tem inverno'],
+      en: ['winter', 'cold', 'snow', 'snowing', 'has winter', 'has snow', 'brazil has winter'],
+      es: ['invierno', 'frío', 'nieve', 'nevar', 'tiene invierno', 'hay nieve', 'brasil tiene invierno']
+    },
+    responses: {
+      pt: 'Sim, mas é leve na maioria das regiões. No sul do país pode fazer frio de verdade.',
+      en: 'Yes, but it\'s mild in most regions. In the south it can get really cold.',
+      es: 'Sí, pero es suave en la mayoría de las regiones. En el sur puede hacer frío de verdad.'
+    }
+  },
+
+  spanish_language: {
+    patterns: {
+      pt: ['falam espanhol', 'espanhol no brasil', 'entendem espanhol', 'brasileiro fala espanhol', 'brasileiros falam espanhol'],
+      en: ['speak spanish', 'spanish in brazil', 'understand spanish', 'brazilians speak spanish'],
+      es: ['hablan español', 'español en brasil', 'entienden español', 'brasileños hablan español']
+    },
+    responses: {
+      pt: 'Não, a língua oficial é o português, mas muitos entendem um pouco de espanhol.',
+      en: 'No, the official language is Portuguese, but many understand some Spanish.',
+      es: 'No, el idioma oficial es el portugués, pero muchos entienden un poco de español.'
+    }
+  },
+
+  vaccine_yellow_fever: {
+    patterns: {
+      pt: ['tomar vacina', 'vacina obrigatória', 'preciso vacina', 'febre amarela', 'vacina para visitar'],
+      en: ['take vaccine', 'mandatory vaccine', 'need vaccine', 'yellow fever', 'vaccine to visit'],
+      es: ['tomar vacuna', 'vacuna obligatoria', 'necesito vacuna', 'fiebre amarilla', 'vacuna para visitar']
+    },
+    responses: {
+      pt: 'Não é obrigatório, mas é recomendado tomar vacina contra febre amarela.',
+      en: 'Not mandatory, but it\'s recommended to get the yellow fever vaccine.',
+      es: 'No es obligatorio, pero es recomendado tomar vacuna contra fiebre amarilla.'
+    }
+  },
+
+  tap_water: {
+    patterns: {
+      pt: ['água da torneira', 'beber água', 'água potável', 'água segura', 'água torneira'],
+      en: ['tap water', 'drink water', 'drinking water', 'safe water'],
+      es: ['agua del grifo', 'beber agua', 'agua potable', 'agua segura']
+    },
+    responses: {
+      pt: 'Em algumas cidades sim, mas o mais seguro é beber água filtrada ou mineral.',
+      en: 'In some cities yes, but it\'s safer to drink filtered or mineral water.',
+      es: 'En algunas ciudades sí, pero lo más seguro es beber agua filtrada o mineral.'
+    }
+  },
+
+  rice_beans: {
+    patterns: {
+      pt: ['arroz e feijão', 'arroz feijão', 'comem todo dia', 'prato típico brasileiro', 'o que brasileiros comem'],
+      en: ['rice and beans', 'eat every day', 'typical brazilian dish', 'what brazilians eat'],
+      es: ['arroz y frijoles', 'comen todos los días', 'plato típico brasileño', 'qué comen brasileños']
+    },
+    responses: {
+      pt: 'Sim! É o prato tradicional da maioria das famílias.\n\nO que os brasileiros mais comem?\nArroz, feijão, carne, salada e frutas tropicais. E claro, pastel e pão de queijo!',
+      en: 'Yes! It\'s the traditional dish for most families.\n\nWhat do Brazilians eat most?\nRice, beans, meat, salad and tropical fruits. And of course, pastel and pão de queijo!',
+      es: '¡Sí! Es el plato tradicional de la mayoría de las familias.\n\n¿Qué comen más los brasileños?\nArroz, frijoles, carne, ensalada y frutas tropicales. ¡Y claro, pastel y pão de queijo!'
+    }
+  },
+
+  foreign_food: {
+    patterns: {
+      pt: ['comida estrangeira', 'restaurante estrangeiro', 'comida internacional', 'comida peruana', 'fácil encontrar comida'],
+      en: ['foreign food', 'international food', 'foreign restaurant', 'peruvian food', 'easy find food'],
+      es: ['comida extranjera', 'comida internacional', 'restaurante extranjero', 'comida peruana', 'fácil encontrar comida']
+    },
+    responses: {
+      pt: 'Sim, há restaurantes peruanos, italianos, japoneses e muitos outros nas grandes cidades.',
+      en: 'Yes, there are Peruvian, Italian, Japanese and many other restaurants in big cities.',
+      es: 'Sí, hay restaurantes peruanos, italianos, japoneses y muchos otros en las grandes ciudades.'
+    }
+  },
+
+  phone_danger: {
+    patterns: {
+      pt: ['celular na rua', 'perigoso celular', 'usar celular rua', 'andar com celular', 'seguro celular'],
+      en: ['phone on street', 'dangerous phone', 'use phone street', 'walk with phone', 'phone safe'],
+      es: ['celular en la calle', 'peligroso celular', 'usar celular calle', 'andar con celular', 'seguro celular']
+    },
+    responses: {
+      pt: 'Em cidades grandes, sim. É melhor usar o celular em locais seguros.',
+      en: 'In big cities, yes. It\'s better to use your phone in safe places.',
+      es: 'En ciudades grandes, sí. Es mejor usar el celular en lugares seguros.'
+    }
+  },
+
+  portuguese_phrases: {
+    patterns: {
+      pt: ['obrigado', 'de nada', 'o que significa', 'palavras básicas', 'frases básicas', 'como se diz'],
+      en: ['thank you', 'you\'re welcome', 'what does it mean', 'basic words', 'basic phrases', 'how to say'],
+      es: ['gracias', 'de nada', 'qué significa', 'palabras básicas', 'frases básicas', 'cómo se dice']
+    },
+    responses: {
+      pt: '"Obrigado" significa "thank you" e "de nada" significa "you\'re welcome".',
+      en: '"Obrigado" means "thank you" and "de nada" means "you\'re welcome".',
+      es: '"Obrigado" significa "gracias" y "de nada" significa "de nada".'
+    }
+  },
+
+  greetings_brazilian: {
+    patterns: {
+      pt: ['como cumprimentam', 'cumprimento brasileiro', 'beijo no rosto', 'aperto de mão', 'como se cumprimentam'],
+      en: ['how greet', 'brazilian greeting', 'kiss on cheek', 'handshake', 'how do they greet'],
+      es: ['cómo saludan', 'saludo brasileño', 'beso en la mejilla', 'apretón de manos', 'cómo se saludan']
+    },
+    responses: {
+      pt: 'Com um aperto de mão ou beijo no rosto — depende da região.',
+      en: 'With a handshake or kiss on the cheek — depends on the region.',
+      es: 'Con un apretón de manos o beso en la mejilla — depende de la región.'
+    }
+  },
+
+  carnaval: {
+    patterns: {
+      pt: ['carnaval', 'o que é carnaval', 'festa carnaval', 'quando é carnaval'],
+      en: ['carnival', 'what is carnival', 'carnival party', 'when is carnival'],
+      es: ['carnaval', 'qué es carnaval', 'fiesta carnaval', 'cuándo es carnaval']
+    },
+    responses: {
+      pt: 'É a maior festa do Brasil, com desfiles, danças e muita música.',
+      en: 'It\'s the biggest party in Brazil, with parades, dances and lots of music.',
+      es: 'Es la fiesta más grande de Brasil, con desfiles, bailes y mucha música.'
+    }
+  },
+
+  free_time: {
+    patterns: {
+      pt: ['tempo livre', 'lazer', 'o que fazem', 'diversão brasileira', 'churrasco', 'o que gostam de fazer'],
+      en: ['free time', 'leisure', 'what do they do', 'brazilian fun', 'barbecue', 'what like to do'],
+      es: ['tiempo libre', 'ocio', 'qué hacen', 'diversión brasileña', 'asado', 'qué les gusta hacer']
+    },
+    responses: {
+      pt: 'Ir à praia, assistir futebol, sair com amigos e fazer churrasco.',
+      en: 'Go to the beach, watch football, hang out with friends and have barbecues.',
+      es: 'Ir a la playa, ver fútbol, salir con amigos y hacer asados.'
+    }
+  },
+
+  dollars_euros: {
+    patterns: {
+      pt: ['usar dólares', 'usar euros', 'aceita dólar', 'comércio local aceita', 'dólares ou euros'],
+      en: ['use dollars', 'use euros', 'accept dollars', 'local commerce accepts', 'dollars or euros'],
+      es: ['usar dólares', 'usar euros', 'acepta dólar', 'comercio local acepta', 'dólares o euros']
+    },
+    responses: {
+      pt: 'Na maioria dos lugares, não. É melhor trocar por reais.',
+      en: 'In most places, no. It\'s better to exchange for reais.',
+      es: 'En la mayoría de lugares, no. Es mejor cambiar por reales.'
+    }
+  },
+
+  brazil_different: {
+    patterns: {
+      pt: ['diferente américa do sul', 'diferente de outros países', 'brasil diferente', 'brasil diferente países'],
+      en: ['different south america', 'different from other countries', 'brazil different'],
+      es: ['diferente américa del sur', 'diferente de otros países', 'brasil diferente']
+    },
+    responses: {
+      pt: 'Sim, principalmente por causa da língua portuguesa e da diversidade cultural.',
+      en: 'Yes, mainly because of the Portuguese language and cultural diversity.',
+      es: 'Sí, principalmente por la lengua portuguesa y la diversidad cultural.'
+    }
+  },
+
+  jeitinho_brasileiro: {
+    patterns: {
+      pt: ['jeitinho brasileiro', 'o que é jeitinho', 'jeitinho', 'resolver problemas'],
+      en: ['jeitinho brasileiro', 'what is jeitinho', 'brazilian way', 'solve problems'],
+      es: ['jeitinho brasileño', 'qué es jeitinho', 'estilo brasileño', 'resolver problemas']
+    },
+    responses: {
+      pt: 'É uma forma criativa de resolver problemas — às vezes improvisando.',
+      en: 'It\'s a creative way of solving problems — sometimes by improvising.',
+      es: 'Es una forma creativa de resolver problemas — a veces improvisando.'
+    }
+  },
+
+  punctuality: {
+    patterns: {
+      pt: ['pontuais', 'pontualidade', 'horário brasileiro', 'chegam atrasados', 'brasileiros pontuais'],
+      en: ['punctual', 'punctuality', 'brazilian time', 'arrive late', 'brazilians punctual'],
+      es: ['puntuales', 'puntualidad', 'horario brasileño', 'llegan tarde', 'brasileños puntuales']
+    },
+    responses: {
+      pt: 'Nem sempre! Os horários costumam ser mais flexíveis, especialmente em eventos informais.',
+      en: 'Not always! Schedules tend to be more flexible, especially at informal events.',
+      es: '¡No siempre! Los horarios suelen ser más flexibles, especialmente en eventos informales.'
+    }
+  },
+
+  brazil_expensive: {
+    patterns: {
+      pt: ['brasil é caro', 'brasil caro', 'preços no brasil', 'quanto custa brasil', 'caro brasil'],
+      en: ['brazil expensive', 'brazil costly', 'prices in brazil', 'how much brazil', 'expensive brazil'],
+      es: ['brasil es caro', 'brasil caro', 'precios en brasil', 'cuánto cuesta brasil', 'caro brasil']
+    },
+    responses: {
+      pt: 'Depende da cidade. As capitais são mais caras; o interior costuma ser bem mais barato.',
+      en: 'Depends on the city. Capitals are more expensive; the interior is usually much cheaper.',
+      es: 'Depende de la ciudad. Las capitales son más caras; el interior suele ser mucho más barato.'
+    }
+  },
+
+  brazilian_people: {
+    patterns: {
+      pt: ['como são os brasileiros', 'brasileiros são', 'povo brasileiro', 'jeito brasileiro', 'personalidade brasileiros'],
+      en: ['what are brazilians like', 'how are brazilians', 'brazilian people', 'brazilian way', 'brazilians personality'],
+      es: ['cómo son los brasileños', 'brasileños son', 'pueblo brasileño', 'estilo brasileño', 'personalidad brasileños']
+    },
+    responses: {
+      pt: 'São simpáticos, acolhedores e gostam de conversar — especialmente com estrangeiros.',
+      en: 'They are friendly, welcoming and like to chat — especially with foreigners.',
+      es: 'Son simpáticos, acogedores y les gusta conversar — especialmente con extranjeros.'
     }
   },
 
