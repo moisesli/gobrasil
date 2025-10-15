@@ -33,8 +33,8 @@
           
           <!-- Formulário de Contato -->
           <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 md:p-10">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Envie sua mensagem</h2>
-            <form class="space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">{{ t('contactFormTitle') }}</h2>
+            <form @submit.prevent="handleSendMessage" class="space-y-6">
               <div>
                 <label for="contact-name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                   {{ t('contactName') }}
@@ -42,22 +42,26 @@
                 <input 
                   id="contact-name" 
                   name="name" 
-                  type="text" 
-                  placeholder="Seu nome completo"
+                  type="text"
+                  v-model="contactForm.name"
+                  :placeholder="t('contactNamePlaceholder')"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                  required
                 >
               </div>
               
               <div>
                 <label for="contact-email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  Email ou WhatsApp
+                  {{ t('contactEmailLabel') }}
                 </label>
                 <input 
                   id="contact-email" 
                   name="email" 
-                  type="text" 
-                  placeholder="email@exemplo.com ou +55 11 98765-4321"
+                  type="text"
+                  v-model="contactForm.contact"
+                  :placeholder="t('contactEmailPlaceholder')"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                  required
                 >
               </div>
               
@@ -68,9 +72,11 @@
                 <textarea 
                   id="contact-message" 
                   name="message" 
-                  rows="5" 
-                  placeholder="Como podemos ajudar você?"
+                  rows="5"
+                  v-model="contactForm.message"
+                  :placeholder="t('contactMessagePlaceholder')"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all resize-none"
+                  required
                 ></textarea>
               </div>
               
@@ -94,16 +100,16 @@
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">WhatsApp</h3>
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('contactWhatsAppTitle') }}</h3>
                   <p class="text-gray-600 dark:text-gray-300 mb-3">
-                    Entre em contato direto pelo WhatsApp para respostas rápidas.
+                    {{ t('contactWhatsAppDesc') }}
                   </p>
                   <a 
-                    href="https://wa.me/5511999999999" 
+                    href="https://wa.me/51929991456" 
                     target="_blank"
                     class="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                   >
-                    Enviar mensagem
+                    {{ t('contactWhatsAppButton') }}
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
@@ -121,15 +127,15 @@
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Email</h3>
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('contactEmailTitle') }}</h3>
                   <p class="text-gray-600 dark:text-gray-300 mb-3">
-                    Envie suas dúvidas por email e responderemos em breve.
+                    {{ t('contactEmailDesc') }}
                   </p>
                   <a 
-                    href="mailto:contato@gobrazil.com" 
+                    href="mailto:gobrasil.guide@gmail.com" 
                     class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors"
                   >
-                    contato@gobrazil.com
+                    gobrasil.guide@gmail.com
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
@@ -147,12 +153,12 @@
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-xl font-bold mb-2">Horário de Atendimento</h3>
+                  <h3 class="text-xl font-bold mb-2">{{ t('contactScheduleTitle') }}</h3>
                   <p class="text-green-100 dark:text-green-50 mb-2">
-                    Segunda a Sexta: 9h - 18h
+                    {{ t('contactScheduleWeekdays') }}
                   </p>
                   <p class="text-green-100 dark:text-green-50">
-                    Sábado: 9h - 13h
+                    {{ t('contactScheduleSaturday') }}
                   </p>
                 </div>
               </div>
@@ -169,6 +175,29 @@
 import { useTranslations } from '~/composables/useTranslations'
 
 const { t, loadSavedLanguage } = useTranslations()
+
+const contactForm = ref({
+  name: '',
+  contact: '',
+  message: ''
+})
+
+const handleSendMessage = () => {
+  // Criar o corpo do email com as informações do formulário
+  const subject = `Mensagem de ${contactForm.value.name} - Go Brazil`
+  const body = `Nome: ${contactForm.value.name}
+Email/WhatsApp: ${contactForm.value.contact}
+
+Mensagem:
+${contactForm.value.message}
+`
+  
+  // Codificar os parâmetros para URL
+  const mailtoLink = `mailto:gobrasil.guide@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  
+  // Abrir o cliente de email padrão
+  window.location.href = mailtoLink
+}
 
 onMounted(() => {
   loadSavedLanguage()

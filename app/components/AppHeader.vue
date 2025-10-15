@@ -157,8 +157,8 @@
                 <Icon v-else name="mdi:account" class="w-6 h-6 text-white" />
               </div>
               <div class="flex-1 text-left">
-                <p class="font-medium">{{ user?.nome || 'Perfil' }}</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Ver perfil</p>
+                <p class="font-medium">{{ user?.nome || t('profileTitle') }}</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">{{ t('profileViewProfile') }}</p>
               </div>
               <Icon name="mdi:chevron-right" class="w-5 h-5 text-gray-400" />
             </button>
@@ -371,7 +371,7 @@
   <div v-if="isProfileModalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeProfileModal">
     <div class="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-6 w-full max-w-md mx-4 max-h-[90vh] overflow-y-auto" @click.stop>
       <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Perfil</h2>
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">{{ t('profileTitle') }}</h2>
         <button @click="closeProfileModal" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
           <Icon name="mdi:close" class="w-6 h-6" />
         </button>
@@ -384,7 +384,7 @@
             <img 
               v-if="profileForm.photoUrl" 
               :src="profileForm.photoUrl" 
-              alt="Foto de perfil"
+              :alt="t('profilePhotoAlt')"
               class="w-full h-full object-cover"
             />
             <Icon v-else name="mdi:account" class="w-12 h-12 text-white" />
@@ -394,7 +394,7 @@
             type="button"
             @click="triggerFileInput"
             class="absolute bottom-0 right-0 bg-green-600 hover:bg-green-700 text-white rounded-full p-2 shadow-lg transition-colors"
-            title="Alterar foto"
+            :title="t('profileChangePhoto')"
           >
             <Icon name="mdi:camera" class="w-4 h-4" />
           </button>
@@ -408,25 +408,25 @@
           />
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">{{ user?.nome }}</p>
-        <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">Clique no ícone da câmera para alterar</p>
+        <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">{{ t('profileClickToChange') }}</p>
       </div>
 
       <!-- Formulário de edição -->
       <form @submit.prevent="handleUpdateProfile" class="space-y-4">
         <div>
-          <label for="profile-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nome</label>
+          <label for="profile-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ t('profileName') }}</label>
           <input
             id="profile-name"
             type="text"
             v-model="profileForm.name"
-            placeholder="Seu nome completo"
+            :placeholder="t('profileNamePlaceholder')"
             class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500"
             required
           />
         </div>
 
         <div>
-          <label for="profile-birthdate" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Data de Nascimento</label>
+          <label for="profile-birthdate" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ t('profileBirthDate') }}</label>
           <input
             id="profile-birthdate"
             type="date"
@@ -437,24 +437,24 @@
         </div>
 
         <div>
-          <label for="profile-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+          <label for="profile-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ t('profileEmail') }}</label>
           <input
             id="profile-email"
             type="email"
             v-model="profileForm.email"
-            placeholder="seu@email.com"
+            :placeholder="t('profileEmailPlaceholder')"
             class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500"
             required
           />
         </div>
 
         <div>
-          <label for="profile-phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Telefone</label>
+          <label for="profile-phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ t('profilePhone') }}</label>
           <input
             id="profile-phone"
             type="tel"
             v-model="profileForm.phone"
-            placeholder="+55 (11) 99999-9999"
+            :placeholder="t('profilePhonePlaceholder')"
             class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500"
           />
         </div>
@@ -463,7 +463,7 @@
           type="submit"
           class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
         >
-          Salvar Alterações
+          {{ t('profileSaveButton') }}
         </button>
 
         <button
@@ -471,9 +471,47 @@
           @click="handleLogout"
           class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
         >
-          Sair da Conta
+          {{ t('profileLogoutButton') }}
         </button>
       </form>
+    </div>
+  </div>
+
+  <!-- Modal de Confirmação de Logout -->
+  <div v-if="isLogoutConfirmOpen" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeLogoutConfirm">
+    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-2xl p-6 w-full max-w-sm mx-4 border-2 border-green-500" @click.stop>
+      <div class="flex flex-col items-center text-center">
+        <!-- Ícone de aviso -->
+        <div class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
+          <Icon name="mdi:logout" class="w-8 h-8 text-green-600 dark:text-green-400" />
+        </div>
+        
+        <!-- Título -->
+        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">
+          {{ t('logoutConfirmTitle') }}
+        </h3>
+        
+        <!-- Mensagem -->
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          {{ t('logoutConfirmMessage') }}
+        </p>
+        
+        <!-- Botões -->
+        <div class="flex gap-3 w-full">
+          <button
+            @click="closeLogoutConfirm"
+            class="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+          >
+            {{ t('logoutConfirmNo') }}
+          </button>
+          <button
+            @click="confirmLogout"
+            class="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+          >
+            {{ t('logoutConfirmYes') }}
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -492,6 +530,7 @@ const { user, isAuthenticated, setUser, logout, updateUser, loadUser } = useAuth
 const isMobileMenuOpen = ref(false)
 const isRegisterModalOpen = ref(false)
 const isProfileModalOpen = ref(false)
+const isLogoutConfirmOpen = ref(false)
 
 const loginForm = ref({
   email: '',
@@ -589,7 +628,6 @@ const handleLogin = async () => {
     // Salvar usuário logado no estado global
     setUser(response.usuario)
     
-    alert(response.message || 'Login realizado com sucesso!')
     handleCloseLoginModal()
     
   } catch (error) {
@@ -663,12 +701,22 @@ const closeProfileModal = () => {
   isProfileModalOpen.value = false
 }
 
+const openLogoutConfirm = () => {
+  isLogoutConfirmOpen.value = true
+}
+
+const closeLogoutConfirm = () => {
+  isLogoutConfirmOpen.value = false
+}
+
+const confirmLogout = () => {
+  logout()
+  closeLogoutConfirm()
+  closeProfileModal()
+}
+
 const handleLogout = () => {
-  if (confirm('Deseja realmente sair?')) {
-    logout()
-    closeProfileModal()
-    alert('Logout realizado com sucesso!')
-  }
+  openLogoutConfirm()
 }
 
 const handleUpdateProfile = async () => {
