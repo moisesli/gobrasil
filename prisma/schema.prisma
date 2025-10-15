@@ -8,13 +8,13 @@ datasource db {
 }
 
 model Usuario {
-  id             Int      @id @default(autoincrement())
-  nome           String
-  email          String   @unique
-  senha          String
-  dataNascimento DateTime
-  telefone       String?
-  fotoPerfil     String?  @db.Text
-  criadoEm       DateTime @default(now())
-  atualizadoEm   DateTime @updatedAt
+  id                  Int       @id @default(autoincrement())
+  nome                String
+  email               String    @unique
+  senha               String
+  dataNascimento      DateTime
+  telefone            String?
+  fotoPerfil          String?   @db.Text
+  criadoEm            DateTime  @default(now())
+  atualizadoEm        DateTime  @updatedAt
 }

@@ -229,6 +229,26 @@ const translations = {
     logoutConfirmYes: 'Sim',
     logoutConfirmNo: 'Não',
     
+    // Modal de Esqueci a Senha
+    forgotPasswordTitle: 'Recuperar Senha',
+    forgotPasswordDescription: 'Digite seu e-mail e enviaremos um link para redefinir sua senha.',
+    forgotPasswordButton: 'Enviar Link de Recuperação',
+    forgotPasswordBackToLogin: 'Voltar ao Login',
+    
+    // Página de Redefinição de Senha
+    resetPasswordTitle: 'Redefinir Senha',
+    resetPasswordSubtitle: 'Digite sua nova senha abaixo',
+    resetPasswordNewPassword: 'Nova Senha',
+    resetPasswordNewPasswordPlaceholder: 'Digite sua nova senha',
+    resetPasswordConfirmPassword: 'Confirmar Senha',
+    resetPasswordConfirmPasswordPlaceholder: 'Digite novamente sua nova senha',
+    resetPasswordButton: 'Redefinir Senha',
+    resetPasswordLoading: 'Redefinindo...',
+    resetPasswordSuccessTitle: 'Senha Redefinida!',
+    resetPasswordSuccessMessage: 'Sua senha foi alterada com sucesso. Agora você pode fazer login com sua nova senha.',
+    resetPasswordBackToHome: 'Voltar ao Início',
+    resetPasswordBackToLogin: 'Voltar ao Login',
+    
     // Página Chatbot
     chatbotTitle: 'Chatbot de Suporte',
     chatbotSubtitle: 'Converse com nosso assistente virtual para tirar suas dúvidas sobre o Brasil.',
@@ -461,6 +481,26 @@ const translations = {
     logoutConfirmYes: 'Yes',
     logoutConfirmNo: 'No',
     
+    // Forgot Password Modal
+    forgotPasswordTitle: 'Recover Password',
+    forgotPasswordDescription: 'Enter your email and we will send you a link to reset your password.',
+    forgotPasswordButton: 'Send Recovery Link',
+    forgotPasswordBackToLogin: 'Back to Login',
+    
+    // Password Reset Page
+    resetPasswordTitle: 'Reset Password',
+    resetPasswordSubtitle: 'Enter your new password below',
+    resetPasswordNewPassword: 'New Password',
+    resetPasswordNewPasswordPlaceholder: 'Enter your new password',
+    resetPasswordConfirmPassword: 'Confirm Password',
+    resetPasswordConfirmPasswordPlaceholder: 'Enter your new password again',
+    resetPasswordButton: 'Reset Password',
+    resetPasswordLoading: 'Resetting...',
+    resetPasswordSuccessTitle: 'Password Reset!',
+    resetPasswordSuccessMessage: 'Your password has been successfully changed. You can now log in with your new password.',
+    resetPasswordBackToHome: 'Back to Home',
+    resetPasswordBackToLogin: 'Back to Login',
+    
     // Chatbot Page
     chatbotTitle: 'Support Chatbot',
     chatbotSubtitle: 'Chat with our virtual assistant to answer your questions about Brazil.',
@@ -692,6 +732,26 @@ const translations = {
     logoutConfirmMessage: '¿Realmente deseas cerrar sesión?',
     logoutConfirmYes: 'Sí',
     logoutConfirmNo: 'No',
+    
+    // Modal de Olvidé la Contraseña
+    forgotPasswordTitle: 'Recuperar Contraseña',
+    forgotPasswordDescription: 'Ingresa tu correo y te enviaremos un enlace para restablecer tu contraseña.',
+    forgotPasswordButton: 'Enviar Enlace de Recuperación',
+    forgotPasswordBackToLogin: 'Volver al Login',
+    
+    // Página de Restablecimiento de Contraseña
+    resetPasswordTitle: 'Restablecer Contraseña',
+    resetPasswordSubtitle: 'Ingresa tu nueva contraseña abajo',
+    resetPasswordNewPassword: 'Nueva Contraseña',
+    resetPasswordNewPasswordPlaceholder: 'Ingresa tu nueva contraseña',
+    resetPasswordConfirmPassword: 'Confirmar Contraseña',
+    resetPasswordConfirmPasswordPlaceholder: 'Ingresa nuevamente tu nueva contraseña',
+    resetPasswordButton: 'Restablecer Contraseña',
+    resetPasswordLoading: 'Restableciendo...',
+    resetPasswordSuccessTitle: '¡Contraseña Restablecida!',
+    resetPasswordSuccessMessage: 'Tu contraseña ha sido cambiada con éxito. Ahora puedes iniciar sesión con tu nueva contraseña.',
+    resetPasswordBackToHome: 'Volver al Inicio',
+    resetPasswordBackToLogin: 'Volver al Login',
     
     // Página Chatbot
     chatbotTitle: 'Chatbot de Soporte',

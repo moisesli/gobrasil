@@ -270,7 +270,6 @@
             <input id="remember-me" name="remember" type="checkbox" v-model="loginForm.remember" class="rounded border-gray-300 text-green-600 focus:ring-green-500">
             <span class="ml-2 text-sm text-gray-600">{{ t('rememberMe') }}</span>
           </label>
-          <a href="#" class="text-sm text-green-600 hover:text-green-700">{{ t('forgotPassword') }}</a>
         </div>
         
         <button
@@ -707,12 +706,6 @@ const openLogoutConfirm = () => {
 
 const closeLogoutConfirm = () => {
   isLogoutConfirmOpen.value = false
-}
-
-const confirmLogout = () => {
-  logout()
-  closeLogoutConfirm()
-  closeProfileModal()
 }
 
 const handleLogout = () => {
