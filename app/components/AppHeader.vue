@@ -712,6 +712,18 @@ const handleLogout = () => {
   openLogoutConfirm()
 }
 
+const confirmLogout = async () => {
+  try {
+    await logout()
+    setUser(null)
+    isLogoutConfirmOpen.value = false
+    alert('Você saiu da conta com sucesso!')
+  } catch (error) {
+    console.error('Erro ao sair da conta:', error)
+    alert('Erro ao sair da conta. Tente novamente.')
+  }
+}
+
 const handleUpdateProfile = async () => {
   try {
     const response = await $fetch('/api/perfil/atualizar', {
