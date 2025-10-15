@@ -21,7 +21,10 @@
         {{ t('heroSubtitle') }}
       </p>
       
-      <button class="font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white" style="background-color: #16a34a !important; border: none !important; opacity: 1 !important;">
+      <button 
+        @click="openLoginModal"
+        class="font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white" 
+        style="background-color: #16a34a !important; border: none !important; opacity: 1 !important;">
         {{ t('heroButton') }}
       </button>
     </div>
@@ -35,8 +38,10 @@
 
 <script setup>
 import { useTranslations } from '~/composables/useTranslations'
+import { useLoginModal } from '~/composables/useLoginModal'
 
 const { t, loadSavedLanguage } = useTranslations()
+const { openLoginModal } = useLoginModal()
 
 // Carregar idioma salvo quando o componente for montado
 onMounted(() => {
